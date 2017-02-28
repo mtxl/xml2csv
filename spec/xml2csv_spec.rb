@@ -5,7 +5,9 @@ describe Xml2csv do
     expect(Xml2csv::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
-  end
+#  context :run do
+#    subject {XML2CSV.run}
+#    it {expect.to eq(true)}
+#    end
+#  end
 end
