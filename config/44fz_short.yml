@@ -1,0 +1,20 @@
+class_name:          "config"
+item_root:           "//xmlns:nsiOrganization"
+item:
+  spz:               "oos:regNumber"
+  name:              "oos:shortName"
+  inn:               "oos:INN"
+  kpp:               "oos:KPP"
+  okved:             "oos:OKVED"
+  website:           "oos:url"
+  gmt:               "oos:timeZone"
+  phone:             "oos:phone"
+  fax:               "oos:fax"
+  email:             "oos:email"
+  business:          "oos:postalAddress"
+  region:            "oos:factualAddress/oos:region/oos:fullName"
+comprraund:
+  contact:
+    last_name:         "oos:contactPerson/oos:lastName"
+    first_name:        "oos:contactPerson/oos:firstName"
+    middle_name:        "oos:contactPerson/oos:middleName"

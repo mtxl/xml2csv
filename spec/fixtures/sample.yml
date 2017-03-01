@@ -1,0 +1,5 @@
+class_name: "test"
+item_root: "//company"
+item:
+  name: "name"
+  fax:  "phone"

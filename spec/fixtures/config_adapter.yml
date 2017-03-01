@@ -1,0 +1,14 @@
+class_name: "config"
+item_root: "//company"
+item:
+  name: "name"
+  phone: "phone"
+compound:
+  fax_name:
+    fax: "fax"
+    name: "name"
+  name_phone:
+    name: "name"
+    phone: "phone"
+
+

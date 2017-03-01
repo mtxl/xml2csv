@@ -1,0 +1,21 @@
+<companies>
+  <company>
+    <name>
+      Big Company
+    </name>
+    <phone>
+      +1-233-345678
+    </phone>
+    <fax>
+      +7-499-876321
+    </fax>
+  </company>
+  <company>
+    <name>
+      Big Company1
+    </name>
+    <phone>
+      +1-233-345670
+    </phone>
+  </company>
+</companies>

@@ -3,3 +3,4 @@
 require "bundler/setup"
 require "xml2csv"
 
+Xml2Csv.process
