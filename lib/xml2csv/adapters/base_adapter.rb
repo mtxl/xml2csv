@@ -29,15 +29,20 @@ class BaseAdapter
   def item_keys
     fields["item"].map {|k,v| k }
   end
+
+  alias_method :header, :item_keys
   
   def item_content(item)
     item_keys.map{ |key| field_content(item, fields["item"][key])}
   end
 
   def each_item
-    items = @doc.xpath(root)
-    items.each do |item|
-      yield item_content(item)
+    begin
+      items = @doc.xpath(root)
+      items.each do |item|
+        yield item_content(item)
+      end
+    rescue
     end
   end
 end

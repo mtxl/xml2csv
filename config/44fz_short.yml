@@ -13,7 +13,7 @@ item:
   email:             "oos:email"
   business:          "oos:postalAddress"
   region:            "oos:factualAddress/oos:region/oos:fullName"
-comprraund:
+compound:
   contact:
     last_name:         "oos:contactPerson/oos:lastName"
     first_name:        "oos:contactPerson/oos:firstName"

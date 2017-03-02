@@ -13,5 +13,9 @@ describe ConfigAdapter do
        "Big Company +1-233-345678"])
     end
   end
+
+  describe :header do
+    it {expect(parsed.header).to eq ["name", "phone", "fax_name", "name_phone"]}
+  end
   
 end
