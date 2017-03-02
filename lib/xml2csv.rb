@@ -32,6 +32,7 @@ module Xml2Csv
       on :c, :config=, 'config'
       on :t, :header, 'csv with names header'
       on :o, :output, 'output directory'
+      on :v, :verbose, 'verbose mode'
     end
 
     unless opts.config? && File.exist?(opts[:config])
@@ -53,6 +54,7 @@ module Xml2Csv
     end
 
     xml_source.each do |source_file|
+      puts source_file if opts.verbose?
       convert_csv(opts[:config], source_file, opts.to_hash)
     end
 
