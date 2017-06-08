@@ -20,6 +20,7 @@ module Xml2Csv
     CSV.open(csv_file, "wb") do |csv|
       csv << parsed.header if header
       parsed.each_item do |data|
+        puts data if @opts.verbose?
         csv << data
       end
     end
@@ -40,6 +41,7 @@ module Xml2Csv
       puts opts.help
       exit
     end
+    @opts = opts
 
     xml_source = ARGV.shift
     unless xml_source
